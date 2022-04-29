@@ -1,12 +1,12 @@
 <?php
+namespace Characters;
 
 abstract class Character
 {
     private $hp;
     private $atq;
     private $spd;
-    private $special;
-    private $cooldown = 0;
+    private $special = 0;
 
     public function getHp()
     {
@@ -26,5 +26,15 @@ abstract class Character
     public function getSpd()
     {
         return $this->spd;
+    }
+
+    public function getSpecial()
+    {
+        return $this->special;
+    }
+
+    public function setSpecial($cooldown)
+    {
+        $this->special = $cooldown;
     }
 }
