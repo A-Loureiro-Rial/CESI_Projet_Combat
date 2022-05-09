@@ -1,11 +1,15 @@
 <?php
-namespace Characters;
+
+require_once("Character.php");
 
 class Mage extends Character
 {
-    private $hp = 20;
-    private $atq = 6;
-    private $spd = 5;
+    public function __construct()
+    {
+        $this->hp = 20;
+        $this->atq = 6;
+        $this->spd = 5;
+    }
 
     public function useSpecial(Character $target)
     {

@@ -1,13 +1,17 @@
 <?php
 
-namespace Characters;
+require_once("Character.php");
 
 class Warrior extends Character
 {
-    private $hp = 30;
-    private $atq = 5;
-    private $spd = 6;
     private $shield = false;
+
+    public function __construct()
+    {
+        $this->hp = 30;
+        $this->atq = 5;
+        $this->spd = 6;
+    }
 
     public function setHp($hp)
     {
