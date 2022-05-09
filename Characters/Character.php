@@ -1,12 +1,11 @@
 <?php
-namespace Characters;
 
 abstract class Character
 {
-    private $hp;
-    private $atq;
-    private $spd;
-    private $special = 0;
+    protected $hp;
+    protected $atq;
+    protected $spd;
+    protected $special = 0;
 
     public function getHp()
     {
