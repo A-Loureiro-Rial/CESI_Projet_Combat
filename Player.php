@@ -32,6 +32,11 @@ class Player
         return $sorted;
     }
 
+    public function getName()
+    {
+        return $this->name;
+    }
+
     public function getCharacters()
     {
         return $this->characters;
